@@ -1,0 +1,1060 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F9F6EF4-B4B6-49A3-8DC4-143F825B01C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ACTk.Runtime">
+      <HintPath>..\ACTk.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>..\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror.Components">
+      <HintPath>..\Mirror.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror.Transports">
+      <HintPath>..\Mirror.Transports.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>..\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>..\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>..\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>..\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>..\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>..\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+      <HintPath>..\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+      <HintPath>..\UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>..\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>..\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbortQuestResource.cs" />
+    <Compile Include="AbortQuestWindowManager.cs" />
+    <Compile Include="AcceptQuestResource.cs" />
+    <Compile Include="AccessLevel.cs" />
+    <Compile Include="AccountCreationManager.cs" />
+    <Compile Include="AccountFriend.cs" />
+    <Compile Include="AccountType.cs" />
+    <Compile Include="ActionBarManager.cs" />
+    <Compile Include="ActionBrushManager.cs" />
+    <Compile Include="ActionTileModule.cs" />
+    <Compile Include="AdrenalineSkill.cs" />
+    <Compile Include="AIModule.cs" />
+    <Compile Include="AmbientLightCameraManager.cs" />
+    <Compile Include="AncientChestItem.cs" />
+    <Compile Include="AncientEnergyBrushManager.cs" />
+    <Compile Include="AnimatedTextRenderer.cs" />
+    <Compile Include="AnimationConfig.cs" />
+    <Compile Include="AnimationControllerModule.cs" />
+    <Compile Include="AnimationModule.cs" />
+    <Compile Include="AnimationSlotModule.cs" />
+    <Compile Include="AnimationType.cs" />
+    <Compile Include="AntiAfkManager.cs" />
+    <Compile Include="AntiAfkWindowManager.cs" />
+    <Compile Include="AntiCheatModule.cs" />
+    <Compile Include="AntidoteItem.cs" />
+    <Compile Include="ApiAccount.cs" />
+    <Compile Include="ApiAccountMail.cs" />
+    <Compile Include="ApiBlueprint.cs" />
+    <Compile Include="ApiBlueprintMaterial.cs" />
+    <Compile Include="ApiConnectResponse.cs" />
+    <Compile Include="ApiCreateAccountResource.cs" />
+    <Compile Include="ApiCreateCharacterResponse.cs" />
+    <Compile Include="ApiDatabaseManager.cs" />
+    <Compile Include="ApiDbEndpointsConfig.cs" />
+    <Compile Include="ApiDbQuests.cs" />
+    <Compile Include="ApiGemOrder.cs" />
+    <Compile Include="ApiItem.cs" />
+    <Compile Include="ApiManager.cs" />
+    <Compile Include="ApiMarketOrder.cs" />
+    <Compile Include="ApiResponse.cs" />
+    <Compile Include="ApiServer.cs" />
+    <Compile Include="ApiStorageItem.cs" />
+    <Compile Include="AppleElixirItem.cs" />
+    <Compile Include="AppleItem.cs" />
+    <Compile Include="AppStoreOrder.cs" />
+    <Compile Include="AreaModule.cs" />
+    <Compile Include="AreaType.cs" />
+    <Compile Include="ArrowDanceSkill.cs" />
+    <Compile Include="AscendedChestItem.cs" />
+    <Compile Include="AscendedStoneItem.cs" />
+    <Compile Include="AsmoonEvolutionNonPlayerSkill.cs" />
+    <Compile Include="AssetBundleConfig.cs" />
+    <Compile Include="AssetBundleManager.cs" />
+    <Compile Include="AssetBundlePlatformUrl.cs" />
+    <Compile Include="Assets\Scripts\Items\Scrolls\ChangeGuildAgreementItem.cs" />
+    <Compile Include="Assets\Scripts\Items\Scrolls\GuildCreationAgreementItem.cs" />
+    <Compile Include="Attacker.cs" />
+    <Compile Include="Attribute.cs" />
+    <Compile Include="AttributeBase.cs" />
+    <Compile Include="AttributeModule.cs" />
+    <Compile Include="AttributeType.cs" />
+    <Compile Include="AttributeWidgetManager.cs" />
+    <Compile Include="AttributeWindowModule.cs" />
+    <Compile Include="AuraModule.cs" />
+    <Compile Include="AutoAttackButtonManager.cs" />
+    <Compile Include="AwesomeHealthPotionItem.cs" />
+    <Compile Include="AwesomeHealthSerumItem.cs" />
+    <Compile Include="AxisOptions.cs" />
+    <Compile Include="AxpPotionItem.cs" />
+    <Compile Include="BananaElixirItem.cs" />
+    <Compile Include="BananaItem.cs" />
+    <Compile Include="BaradonMagicCoreItem.cs" />
+    <Compile Include="BasicAxpBoosterItem.cs" />
+    <Compile Include="BasicChestItem.cs" />
+    <Compile Include="BasicCollectorItem.cs" />
+    <Compile Include="BasicExperienceBoosterItem.cs" />
+    <Compile Include="BasicHealthPotionItem.cs" />
+    <Compile Include="BasicHealthSerumItem.cs" />
+    <Compile Include="BasicInventoryBoosterItem.cs" />
+    <Compile Include="BattlefieldSkill.cs" />
+    <Compile Include="BigStoneProjectile.cs" />
+    <Compile Include="BitMaskAttribute.cs" />
+    <Compile Include="BlackSkullProjectile.cs" />
+    <Compile Include="BladeDanceSkill.cs" />
+    <Compile Include="BlasusMagicCoreItem.cs" />
+    <Compile Include="Blueprint.cs" />
+    <Compile Include="BlueprintDatabaseModule.cs" />
+    <Compile Include="BlueprintItem.cs" />
+    <Compile Include="BlueprintMaterial.cs" />
+    <Compile Include="BlueprintSlotManager.cs" />
+    <Compile Include="BoostScrollItem.cs" />
+    <Compile Include="BossAuraNonPlayerSkill.cs" />
+    <Compile Include="BossEventMessage.cs" />
+    <Compile Include="BossEventWindowManager.cs" />
+    <Compile Include="BossManagementModule.cs" />
+    <Compile Include="BossSpawnConfig.cs" />
+    <Compile Include="BreakPrefabConnection.cs" />
+    <Compile Include="BuyGemStoreManager.cs" />
+    <Compile Include="BuyMarketManager.cs" />
+    <Compile Include="BuyOrderManager.cs" />
+    <Compile Include="CameraMode.cs" />
+    <Compile Include="CelestialDeadRuneItem.cs" />
+    <Compile Include="CelestialEnergizedRuneItem.cs" />
+    <Compile Include="ChangeGenderItem.cs" />
+    <Compile Include="ChangeGuildWindowManager.cs" />
+    <Compile Include="ChangeNameItem.cs" />
+    <Compile Include="ChangeNameWindowManager.cs" />
+    <Compile Include="CharacterCreationManager.cs" />
+    <Compile Include="CharacterListManager.cs" />
+    <Compile Include="CharacterSlotBoosterItem.cs" />
+    <Compile Include="CharacterSlotManager.cs" />
+    <Compile Include="ChatButtonManager.cs" />
+    <Compile Include="ChatChannel.cs" />
+    <Compile Include="ChatContact.cs" />
+    <Compile Include="ChatHolderManager.cs" />
+    <Compile Include="ChatInputManager.cs" />
+    <Compile Include="ChatMessage.cs" />
+    <Compile Include="ChatModule.cs" />
+    <Compile Include="ChatTabManager.cs" />
+    <Compile Include="CheeseElixirItem.cs" />
+    <Compile Include="CheeseItem.cs" />
+    <Compile Include="ChildObjectBrowser.cs" />
+    <Compile Include="ChoiceButtonManager.cs" />
+    <Compile Include="ClassFactory.cs" />
+    <Compile Include="ClientSettings.cs" />
+    <Compile Include="CollectorConfigWindowManager.cs" />
+    <Compile Include="CollectorModule.cs" />
+    <Compile Include="CombatBase.cs" />
+    <Compile Include="CombatModule.cs" />
+    <Compile Include="CometNonPlayerSkill.cs" />
+    <Compile Include="CommonColorBuffer.cs" />
+    <Compile Include="CompleteSteamTransactionResource.cs" />
+    <Compile Include="ComponentManagementModule.cs" />
+    <Compile Include="Condition.cs" />
+    <Compile Include="ConditionBarSlotManager.cs" />
+    <Compile Include="ConditionCategory.cs" />
+    <Compile Include="ConditionConfig.cs" />
+    <Compile Include="ConditionModule.cs" />
+    <Compile Include="ConditionType.cs" />
+    <Compile Include="ConfirmationWindowManager.cs" />
+    <Compile Include="ConfusingScreamNonPlayerSkill.cs" />
+    <Compile Include="ConnectionData.cs" />
+    <Compile Include="ConnectionFailureMessage.cs" />
+    <Compile Include="ControlsTabModule.cs" />
+    <Compile Include="CosmosSkill.cs" />
+    <Compile Include="CraftMaterialManager.cs" />
+    <Compile Include="CraftModule.cs" />
+    <Compile Include="CraftWindowManager.cs" />
+    <Compile Include="CreatureGender.cs" />
+    <Compile Include="CreatureModule.cs" />
+    <Compile Include="CrushOfDoomSkill.cs" />
+    <Compile Include="CursorManager.cs" />
+    <Compile Include="DailyReward.cs" />
+    <Compile Include="DailyRewardButtonManager.cs" />
+    <Compile Include="DailyRewardDatabaseModule.cs" />
+    <Compile Include="DailyRewardModule.cs" />
+    <Compile Include="DailyRewardSlotManager.cs" />
+    <Compile Include="DailyRewardWindowManager.cs" />
+    <Compile Include="DarkballNonPlayerSkill.cs" />
+    <Compile Include="DarkballProjectile.cs" />
+    <Compile Include="DarkScratchNonPlayerSkill.cs" />
+    <Compile Include="DarkShotNonPlayerSkill.cs" />
+    <Compile Include="DarkSphereProjectile.cs" />
+    <Compile Include="DatabaseManager.cs" />
+    <Compile Include="DatabaseModule.cs" />
+    <Compile Include="DbAccount.cs" />
+    <Compile Include="DbBlueprint.cs" />
+    <Compile Include="DbDailyReward.cs" />
+    <Compile Include="DbEquipment.cs" />
+    <Compile Include="DbGuild.cs" />
+    <Compile Include="DbInventory.cs" />
+    <Compile Include="DbItem.cs" />
+    <Compile Include="DbMarket.cs" />
+    <Compile Include="DbMonster.cs" />
+    <Compile Include="DbMonsterLoot.cs" />
+    <Compile Include="DbMonsterSkill.cs" />
+    <Compile Include="DbNpc.cs" />
+    <Compile Include="DbNpcSkill.cs" />
+    <Compile Include="DbPlayer.cs" />
+    <Compile Include="DbPlayerCondition.cs" />
+    <Compile Include="DbPlayerQuest.cs" />
+    <Compile Include="DbPlayerSkill.cs" />
+    <Compile Include="DbPlayerTalent.cs" />
+    <Compile Include="DbPlayerTitle.cs" />
+    <Compile Include="DbQuest.cs" />
+    <Compile Include="DbServer.cs" />
+    <Compile Include="DbSkill.cs" />
+    <Compile Include="DbTitle.cs" />
+    <Compile Include="DbWarehouse.cs" />
+    <Compile Include="DeadRuneItem.cs" />
+    <Compile Include="DefaultItem.cs" />
+    <Compile Include="DefaultProjectile.cs" />
+    <Compile Include="DefaultSkill.cs" />
+    <Compile Include="DefaultTooltipManager.cs" />
+    <Compile Include="DefianceSkill.cs" />
+    <Compile Include="DeleteCharacterWindowManager.cs" />
+    <Compile Include="DenialSkill.cs" />
+    <Compile Include="DesktopTutorialManager.cs" />
+    <Compile Include="DevastationSkill.cs" />
+    <Compile Include="DialogWindowManager.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="DiscordMessage.cs" />
+    <Compile Include="DiscordWebhookManager.cs" />
+    <Compile Include="DoguineoMagicCoreItem.cs" />
+    <Compile Include="DragWindowModule.cs" />
+    <Compile Include="DropineMagicCoreItem.cs" />
+    <Compile Include="DuloGames\UI\AnimationTriggersExtended.cs" />
+    <Compile Include="DuloGames\UI\ColorBlockExtended.cs" />
+    <Compile Include="DuloGames\UI\ColorScheme.cs" />
+    <Compile Include="DuloGames\UI\ColorSchemeElement.cs" />
+    <Compile Include="DuloGames\UI\ColorSchemeElementType.cs" />
+    <Compile Include="DuloGames\UI\ColorSchemeManager.cs" />
+    <Compile Include="DuloGames\UI\ColorSchemeShade.cs" />
+    <Compile Include="DuloGames\UI\Demo_AddChatMessage.cs" />
+    <Compile Include="DuloGames\UI\Demo_AddChatTestMessages.cs" />
+    <Compile Include="DuloGames\UI\Demo_CastManager.cs" />
+    <Compile Include="DuloGames\UI\Demo_CharacterCreateMgr.cs" />
+    <Compile Include="DuloGames\UI\Demo_CharacterInfo.cs" />
+    <Compile Include="DuloGames\UI\Demo_CharacterSelectChar.cs" />
+    <Compile Include="DuloGames\UI\Demo_CharacterSelectList.cs" />
+    <Compile Include="DuloGames\UI\Demo_CharacterSelectList_Character.cs" />
+    <Compile Include="DuloGames\UI\Demo_CharacterSelectMgr.cs" />
+    <Compile Include="DuloGames\UI\Demo_Chat.cs" />
+    <Compile Include="DuloGames\UI\Demo_LookAtCamera.cs" />
+    <Compile Include="DuloGames\UI\Demo_QualitySlider.cs" />
+    <Compile Include="DuloGames\UI\Demo_QuestTrackerCollapse.cs" />
+    <Compile Include="DuloGames\UI\Demo_Quit.cs" />
+    <Compile Include="DuloGames\UI\Demo_ResolutionSelect.cs" />
+    <Compile Include="DuloGames\UI\Demo_XPTooltip.cs" />
+    <Compile Include="DuloGames\UI\FlexibleWidthGridLayout.cs" />
+    <Compile Include="DuloGames\UI\Gradient.cs" />
+    <Compile Include="DuloGames\UI\IUIItemSlot.cs" />
+    <Compile Include="DuloGames\UI\IUIProgressBar.cs" />
+    <Compile Include="DuloGames\UI\IUISlotHasCooldown.cs" />
+    <Compile Include="DuloGames\UI\IUISpellSlot.cs" />
+    <Compile Include="DuloGames\UI\LetterSpacing.cs" />
+    <Compile Include="DuloGames\UI\NicerOutline.cs" />
+    <Compile Include="DuloGames\UI\OverrideTextAlignment.cs" />
+    <Compile Include="DuloGames\UI\SpriteStateExtended.cs" />
+    <Compile Include="DuloGames\UI\Test_CastBar.cs" />
+    <Compile Include="DuloGames\UI\Test_CompassTester.cs" />
+    <Compile Include="DuloGames\UI\Test_FadeInOut.cs" />
+    <Compile Include="DuloGames\UI\Test_Fill.cs" />
+    <Compile Include="DuloGames\UI\Test_SelectAddOption.cs" />
+    <Compile Include="DuloGames\UI\Test_UIBulletBar.cs" />
+    <Compile Include="DuloGames\UI\Test_UIEquipSlot_Assign.cs" />
+    <Compile Include="DuloGames\UI\Test_UIItemSlot_Assign.cs" />
+    <Compile Include="DuloGames\UI\Test_UIItemSlot_AssignAll.cs" />
+    <Compile Include="DuloGames\UI\Test_UIProgressBar.cs" />
+    <Compile Include="DuloGames\UI\Test_UISlotBase_Assign.cs" />
+    <Compile Include="DuloGames\UI\Test_UISpellSlot_Assign.cs" />
+    <Compile Include="DuloGames\UI\Test_UISpellSlot_AssignAll.cs" />
+    <Compile Include="DuloGames\UI\Test_UITalentSlot_Assign.cs" />
+    <Compile Include="DuloGames\UI\Tweens\ColorTween.cs" />
+    <Compile Include="DuloGames\UI\Tweens\FloatTween.cs" />
+    <Compile Include="DuloGames\UI\Tweens\ITweenValue.cs" />
+    <Compile Include="DuloGames\UI\Tweens\TweenEasing.cs" />
+    <Compile Include="DuloGames\UI\Tweens\TweenEasingHandler.cs" />
+    <Compile Include="DuloGames\UI\Tweens\TweenRunner.cs" />
+    <Compile Include="DuloGames\UI\Tweens\Vector2Tween.cs" />
+    <Compile Include="DuloGames\UI\Tweens\Vector3Tween.cs" />
+    <Compile Include="DuloGames\UI\UIAlwaysOnTop.cs" />
+    <Compile Include="DuloGames\UI\UIAudioSource.cs" />
+    <Compile Include="DuloGames\UI\UIBlackOverlay.cs" />
+    <Compile Include="DuloGames\UI\UIBlackOverlayManager.cs" />
+    <Compile Include="DuloGames\UI\UIBulletBar.cs" />
+    <Compile Include="DuloGames\UI\UICanvasAnchorToCamera.cs" />
+    <Compile Include="DuloGames\UI\UICanvasAspectResize.cs" />
+    <Compile Include="DuloGames\UI\UICastBar.cs" />
+    <Compile Include="DuloGames\UI\UICircularRaycastFilter.cs" />
+    <Compile Include="DuloGames\UI\UICloseAndShowWindow.cs" />
+    <Compile Include="DuloGames\UI\UIDragObject.cs" />
+    <Compile Include="DuloGames\UI\UIDrawVertices.cs" />
+    <Compile Include="DuloGames\UI\UIEffectTransition.cs" />
+    <Compile Include="DuloGames\UI\UIEquipmentType.cs" />
+    <Compile Include="DuloGames\UI\UIEquipReceiver.cs" />
+    <Compile Include="DuloGames\UI\UIEquipSlot.cs" />
+    <Compile Include="DuloGames\UI\UIFlippable.cs" />
+    <Compile Include="DuloGames\UI\UIGlobeFillInverter.cs" />
+    <Compile Include="DuloGames\UI\UIHighlightTransition.cs" />
+    <Compile Include="DuloGames\UI\UIIgnoreRaycast.cs" />
+    <Compile Include="DuloGames\UI\UIInputCaretOffset.cs" />
+    <Compile Include="DuloGames\UI\UIInputEvent.cs" />
+    <Compile Include="DuloGames\UI\UIItemDatabase.cs" />
+    <Compile Include="DuloGames\UI\UIItemInfo.cs" />
+    <Compile Include="DuloGames\UI\UIItemQuality.cs" />
+    <Compile Include="DuloGames\UI\UIItemQualityColor.cs" />
+    <Compile Include="DuloGames\UI\UIItemSlot.cs" />
+    <Compile Include="DuloGames\UI\UIItemSlot_Group.cs" />
+    <Compile Include="DuloGames\UI\UIItemSlot_SetColorFromQuality.cs" />
+    <Compile Include="DuloGames\UI\UIJoystick.cs" />
+    <Compile Include="DuloGames\UI\UILoadingOverlay.cs" />
+    <Compile Include="DuloGames\UI\UILoadingOverlayManager.cs" />
+    <Compile Include="DuloGames\UI\UILoadScene.cs" />
+    <Compile Include="DuloGames\UI\UIMaskRaycastFilter.cs" />
+    <Compile Include="DuloGames\UI\UIModalBox.cs" />
+    <Compile Include="DuloGames\UI\UIModalBoxCreate.cs" />
+    <Compile Include="DuloGames\UI\UIModalBoxManager.cs" />
+    <Compile Include="DuloGames\UI\UIPagination.cs" />
+    <Compile Include="DuloGames\UI\UIPlayAudio.cs" />
+    <Compile Include="DuloGames\UI\UIPressTransition.cs" />
+    <Compile Include="DuloGames\UI\UIProgressBar.cs" />
+    <Compile Include="DuloGames\UI\UIRectangularRaycastFilter.cs" />
+    <Compile Include="DuloGames\UI\UIScene.cs" />
+    <Compile Include="DuloGames\UI\UISceneManager.cs" />
+    <Compile Include="DuloGames\UI\UISceneOpen.cs" />
+    <Compile Include="DuloGames\UI\UISceneRegistry.cs" />
+    <Compile Include="DuloGames\UI\UIScrollRectExpander.cs" />
+    <Compile Include="DuloGames\UI\UISelectField.cs" />
+    <Compile Include="DuloGames\UI\UISelectField_List.cs" />
+    <Compile Include="DuloGames\UI\UISelectField_Option.cs" />
+    <Compile Include="DuloGames\UI\UISelectField_OptionOverlay.cs" />
+    <Compile Include="DuloGames\UI\UISelectField_Transition.cs" />
+    <Compile Include="DuloGames\UI\UISliderDisplayValue.cs" />
+    <Compile Include="DuloGames\UI\UISliderExtended.cs" />
+    <Compile Include="DuloGames\UI\UISlotBase.cs" />
+    <Compile Include="DuloGames\UI\UISlotCooldown.cs" />
+    <Compile Include="DuloGames\UI\UISpellDatabase.cs" />
+    <Compile Include="DuloGames\UI\UISpellInfo.cs" />
+    <Compile Include="DuloGames\UI\UISpellInfo_Flags.cs" />
+    <Compile Include="DuloGames\UI\UISpellInfo_FlagsExtensions.cs" />
+    <Compile Include="DuloGames\UI\UISpellSlot.cs" />
+    <Compile Include="DuloGames\UI\UISpellSlot_Group.cs" />
+    <Compile Include="DuloGames\UI\UIStatsAdd.cs" />
+    <Compile Include="DuloGames\UI\UIStepBar.cs" />
+    <Compile Include="DuloGames\UI\UISwitchSelect.cs" />
+    <Compile Include="DuloGames\UI\UITab.cs" />
+    <Compile Include="DuloGames\UI\UITalentDatabase.cs" />
+    <Compile Include="DuloGames\UI\UITalentInfo.cs" />
+    <Compile Include="DuloGames\UI\UITalentSlot.cs" />
+    <Compile Include="DuloGames\UI\UITextSetValue.cs" />
+    <Compile Include="DuloGames\UI\UIToggleActiveTransition.cs" />
+    <Compile Include="DuloGames\UI\UIToggleWindowAndTab.cs" />
+    <Compile Include="DuloGames\UI\UIToggle_OnOff.cs" />
+    <Compile Include="DuloGames\UI\UITooltip.cs" />
+    <Compile Include="DuloGames\UI\UITooltipFlipBackground.cs" />
+    <Compile Include="DuloGames\UI\UITooltipFlipEffect.cs" />
+    <Compile Include="DuloGames\UI\UITooltipFlipTransform.cs" />
+    <Compile Include="DuloGames\UI\UITooltipLineContent.cs" />
+    <Compile Include="DuloGames\UI\UITooltipLines.cs" />
+    <Compile Include="DuloGames\UI\UITooltipLineStyle.cs" />
+    <Compile Include="DuloGames\UI\UITooltipManager.cs" />
+    <Compile Include="DuloGames\UI\UITooltipShow.cs" />
+    <Compile Include="DuloGames\UI\UITooltipTextEffect.cs" />
+    <Compile Include="DuloGames\UI\UITooltipTextEffectType.cs" />
+    <Compile Include="DuloGames\UI\UIUtility.cs" />
+    <Compile Include="DuloGames\UI\UIWindow.cs" />
+    <Compile Include="DuloGames\UI\UIWindowID.cs" />
+    <Compile Include="DuloGames\UI\UIWindowManager.cs" />
+    <Compile Include="DuloGames\UI\UIWorldCanvasScaleByCamera.cs" />
+    <Compile Include="DynamicJoystick.cs" />
+    <Compile Include="EarthquakeNonPlayerSkill.cs" />
+    <Compile Include="EarthShotNonPlayerSkill.cs" />
+    <Compile Include="Effect.cs" />
+    <Compile Include="EffectConfig.cs" />
+    <Compile Include="EffectModule.cs" />
+    <Compile Include="EffectRenderer.cs" />
+    <Compile Include="ElectricShotNonPlayerSkill.cs" />
+    <Compile Include="ElitePackageUpgradeItem.cs" />
+    <Compile Include="EmpowerSkill.cs" />
+    <Compile Include="EnchantScrollItem.cs" />
+    <Compile Include="EnergizedRuneItem.cs" />
+    <Compile Include="EnergyRainNonPlayerSkill.cs" />
+    <Compile Include="EpicChestItem.cs" />
+    <Compile Include="EpicStoneItem.cs" />
+    <Compile Include="EquipmentModule.cs" />
+    <Compile Include="EquipmentSlotManager.cs" />
+    <Compile Include="EtherealFormSkill.cs" />
+    <Compile Include="EvasiveShotSkill.cs" />
+    <Compile Include="ExperienceBonus.cs" />
+    <Compile Include="ExperienceData.cs" />
+    <Compile Include="ExpertiseSkill.cs" />
+    <Compile Include="ExpPotionItem.cs" />
+    <Compile Include="FatalSlashNonPlayerSkill.cs" />
+    <Compile Include="FineAxpBoosterItem.cs" />
+    <Compile Include="FineChestItem.cs" />
+    <Compile Include="FineCollectorItem.cs" />
+    <Compile Include="FineExperienceBoosterItem.cs" />
+    <Compile Include="FireballNonPlayerSkill.cs" />
+    <Compile Include="FireballProjectile.cs" />
+    <Compile Include="FireballSkill.cs" />
+    <Compile Include="FireScratchNonPlayerSkill.cs" />
+    <Compile Include="FixedJoystick.cs" />
+    <Compile Include="FlameArrowProjectile.cs" />
+    <Compile Include="FloatingJoystick.cs" />
+    <Compile Include="FocusNonPlayerSkill.cs" />
+    <Compile Include="Fortification.cs" />
+    <Compile Include="FrameConfig.cs" />
+    <Compile Include="FreePremiumWindowManager.cs" />
+    <Compile Include="FriendListWindowManager.cs" />
+    <Compile Include="FriendSlotManager.cs" />
+    <Compile Include="GameEnvironmentModule.cs" />
+    <Compile Include="GameInputModule.cs" />
+    <Compile Include="GameMenuManager.cs" />
+    <Compile Include="GeminiMagicCoreItem.cs" />
+    <Compile Include="GemItem.cs" />
+    <Compile Include="GemOrderManager.cs" />
+    <Compile Include="GemStoreManager.cs" />
+    <Compile Include="GenderToggleManager.cs" />
+    <Compile Include="GGEZ\PerfectPixelCamera.cs" />
+    <Compile Include="GGEZ\PerfectPixelSprite.cs" />
+    <Compile Include="GGEZ\PpsDemo.cs" />
+    <Compile Include="GGEZ\ZoomDemo.cs" />
+    <Compile Include="GGEZ\ZoomDemoMode.cs" />
+    <Compile Include="GlobalEventConfig.cs" />
+    <Compile Include="GlobalEventModule.cs" />
+    <Compile Include="GlobalExtensions.cs" />
+    <Compile Include="GlobalScenes.cs" />
+    <Compile Include="GlobalSettings.cs" />
+    <Compile Include="GlobalUtils.cs" />
+    <Compile Include="GodsPunishmentNonPlayerSkill.cs" />
+    <Compile Include="GoldCoinItem.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\CommonTypesUtil.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\DataSource.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Events\Event.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Events\EventVisibility.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Events\IEvent.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\FriendsListVisibilityStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Gravity.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\LeaderboardCollection.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\LeaderboardStart.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\LeaderboardTimeSpan.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\LoadFriendsStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\AdvertisingResult.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\ConnectionRequest.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\ConnectionResponse.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\EndpointDetails.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\IDiscoveryListener.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\IMessageListener.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\InitializationStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Nearby\NearbyConnectionConfiguration.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\ResponseStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\ConflictCallback.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\ConflictResolutionStrategy.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\IConflictResolver.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\ISavedGameClient.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\ISavedGameMetadata.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\SavedGameMetadataUpdate.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\SavedGameRequestStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SavedGame\SelectUIStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SignInHelper.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SignInInteractivity.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\SignInStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\UIStatus.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\VideoCaptureMode.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\VideoCaptureOverlayState.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\VideoQualityLevel.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Video\CaptureOverlayStateListener.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Video\IVideoClient.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Video\VideoCapabilities.cs" />
+    <Compile Include="GooglePlayGames\BasicApi\Video\VideoCaptureState.cs" />
+    <Compile Include="GooglePlayGames\OurUtils\Logger.cs" />
+    <Compile Include="GooglePlayGames\OurUtils\Misc.cs" />
+    <Compile Include="GooglePlayGames\OurUtils\PlayGamesHelperObject.cs" />
+    <Compile Include="GooglePlayGames\PluginVersion.cs" />
+    <Compile Include="GooglePlayLoginData.cs" />
+    <Compile Include="GooglePlayOrder.cs" />
+    <Compile Include="GooglePlayServicesManager.cs" />
+    <Compile Include="GravityPulseSkill.cs" />
+    <Compile Include="GreatHealthPotionItem.cs" />
+    <Compile Include="GroundSlotModule.cs" />
+    <Compile Include="GuardianAngelItem.cs" />
+    <Compile Include="Guild.cs" />
+    <Compile Include="GuildCreationWindowManager.cs" />
+    <Compile Include="GuildInvitationWindowModule.cs" />
+    <Compile Include="GuildMember.cs" />
+    <Compile Include="GuildMemberModule.cs" />
+    <Compile Include="GuildMemberRank.cs" />
+    <Compile Include="GuildModule.cs" />
+    <Compile Include="GuildWindowModule.cs" />
+    <Compile Include="HealNonPlayerSkill.cs" />
+    <Compile Include="HopeSkill.cs" />
+    <Compile Include="HudModule.cs" />
+    <Compile Include="HunterArrowDanceNonPlayerSkill.cs" />
+    <Compile Include="HunterShotNonPlayerSkill.cs" />
+    <Compile Include="IAPButtonManager.cs" />
+    <Compile Include="IAPManager.cs" />
+    <Compile Include="IceArrowDanceNonPlayerSkill.cs" />
+    <Compile Include="IceArrowProjectile.cs" />
+    <Compile Include="IceballProjectile.cs" />
+    <Compile Include="IceBlasterNonPlayerSkill.cs" />
+    <Compile Include="IceForceProjectile.cs" />
+    <Compile Include="IceNovaSkill.cs" />
+    <Compile Include="IceShotNonPlayerSkill.cs" />
+    <Compile Include="IcicleProjectile.cs" />
+    <Compile Include="IcicleSkill.cs" />
+    <Compile Include="IcyScratchNonPlayerSkill.cs" />
+    <Compile Include="IcyTornadoNonPlayerSkill.cs" />
+    <Compile Include="IdleModule.cs" />
+    <Compile Include="IgnitionNonPlayerSkill.cs" />
+    <Compile Include="ImportantMessageWindowManager.cs" />
+    <Compile Include="InfernoNonPlayerSkill.cs" />
+    <Compile Include="InformationWindowManager.cs" />
+    <Compile Include="InputTabManager.cs" />
+    <Compile Include="InterventionSkill.cs" />
+    <Compile Include="InventoryBoosterItem.cs" />
+    <Compile Include="InventoryBoosterWindowManager.cs" />
+    <Compile Include="InventoryModule.cs" />
+    <Compile Include="InventorySlotManager.cs" />
+    <Compile Include="InventoryWindowManager.cs" />
+    <Compile Include="InvincibleNonPlayerSkill.cs" />
+    <Compile Include="IronArrowProjectile.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemBarSlotManager.cs" />
+    <Compile Include="ItemBase.cs" />
+    <Compile Include="ItemBaseConfig.cs" />
+    <Compile Include="ItemBoostWindowManager.cs" />
+    <Compile Include="ItemCategory.cs" />
+    <Compile Include="ItemDatabaseModule.cs" />
+    <Compile Include="ItemDestructionWindowManager.cs" />
+    <Compile Include="ItemModule.cs" />
+    <Compile Include="ItemQuality.cs" />
+    <Compile Include="ItemSplitWindowManager.cs" />
+    <Compile Include="ItemTooltipManager.cs" />
+    <Compile Include="ItemType.cs" />
+    <Compile Include="ItemUpgradeWindowManager.cs" />
+    <Compile Include="Joystick.cs" />
+    <Compile Include="JoystickPlayerExample.cs" />
+    <Compile Include="JoystickSetterExample.cs" />
+    <Compile Include="JoystickType.cs" />
+    <Compile Include="JudgementSkill.cs" />
+    <Compile Include="JusticeSkill.cs" />
+    <Compile Include="KarmaSkill.cs" />
+    <Compile Include="KeyMap.cs" />
+    <Compile Include="KeyMapModule.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="LanguageItem.cs" />
+    <Compile Include="LanguageManager.cs" />
+    <Compile Include="LanguagePack.cs" />
+    <Compile Include="LapisSkill.cs" />
+    <Compile Include="LazuliSkill.cs" />
+    <Compile Include="LegendaryPackageUpgradeItem.cs" />
+    <Compile Include="LifeDrainNonPlayerSkill.cs" />
+    <Compile Include="LifeSphereProjectile.cs" />
+    <Compile Include="LightModule.cs" />
+    <Compile Include="LightningBoltProjectile.cs" />
+    <Compile Include="LoginManager.cs" />
+    <Compile Include="LoginMessage.cs" />
+    <Compile Include="LoginMessageWindowManager.cs" />
+    <Compile Include="LootConfig.cs" />
+    <Compile Include="LotusSkill.cs" />
+    <Compile Include="LuminaireSkill.cs" />
+    <Compile Include="LyriumSkill.cs" />
+    <Compile Include="MagicCoreItem.cs" />
+    <Compile Include="MapLightManager.cs" />
+    <Compile Include="MapManager.cs" />
+    <Compile Include="MarketModule.cs" />
+    <Compile Include="MarketOrder.cs" />
+    <Compile Include="MarketStorage.cs" />
+    <Compile Include="MassParalyzingNonPlayerSkill.cs" />
+    <Compile Include="MasterHealthPotionItem.cs" />
+    <Compile Include="MasterworkAxpBoosterItem.cs" />
+    <Compile Include="MasterworkChestItem.cs" />
+    <Compile Include="MasterworkCollectorItem.cs" />
+    <Compile Include="MasterworkExperienceBoosterItem.cs" />
+    <Compile Include="MasterworkStoneItem.cs" />
+    <Compile Include="MasteryBookItem.cs" />
+    <Compile Include="MeatElixirItem.cs" />
+    <Compile Include="MeatItem.cs" />
+    <Compile Include="Medkit.cs" />
+    <Compile Include="MenuAudioManager.cs" />
+    <Compile Include="MenuSystemModule.cs" />
+    <Compile Include="MessageTextManager.cs" />
+    <Compile Include="MeteorShowerNonPlayerSkill.cs" />
+    <Compile Include="MeteorShowerSkill.cs" />
+    <Compile Include="MinimapDetails.cs" />
+    <Compile Include="MinimapPointManager.cs" />
+    <Compile Include="Mirror\GeneratedNetworkCode.cs" />
+    <Compile Include="MobileActionButtonManager.cs" />
+    <Compile Include="MobileAttackButtonManager.cs" />
+    <Compile Include="MobileAvatarManager.cs" />
+    <Compile Include="MobileChangeSkillbarButtonManager.cs" />
+    <Compile Include="MobileChangeTargetButtonManager.cs" />
+    <Compile Include="MobileDashButtonManager.cs" />
+    <Compile Include="MobileExpBarManager.cs" />
+    <Compile Include="MobileHudManager.cs" />
+    <Compile Include="MobileItemButtonManager.cs" />
+    <Compile Include="MobileItemHolderManager.cs" />
+    <Compile Include="MobileItemSlotManager.cs" />
+    <Compile Include="MobileMinimapManager.cs" />
+    <Compile Include="MobileSkillButtonManager.cs" />
+    <Compile Include="MobileTutorialManager.cs" />
+    <Compile Include="MobileWindowManager.cs" />
+    <Compile Include="Monster.cs" />
+    <Compile Include="MonsterDatabaseModule.cs" />
+    <Compile Include="MonsterModule.cs" />
+    <Compile Include="MonsterSpawnBrushManager.cs" />
+    <Compile Include="MonsterSpawnPoint.cs" />
+    <Compile Include="MorningBreathSkill.cs" />
+    <Compile Include="MovementModule.cs" />
+    <Compile Include="MoveToMousePos.cs" />
+    <Compile Include="MuumMagicCoreItem.cs" />
+    <Compile Include="MyOffersManager.cs" />
+    <Compile Include="NetworkManagerModule.cs" />
+    <Compile Include="NightmareNonPlayerSkill.cs" />
+    <Compile Include="NirvanaSkill.cs" />
+    <Compile Include="NonPlayerAIModule.cs" />
+    <Compile Include="NonPlayerAttributeModule.cs" />
+    <Compile Include="NonPlayerEquipmentModule.cs" />
+    <Compile Include="NonPlayerSkillBase.cs" />
+    <Compile Include="NonPlayerSkillModule.cs" />
+    <Compile Include="Npc.cs" />
+    <Compile Include="NpcAction.cs" />
+    <Compile Include="NpcAika.cs" />
+    <Compile Include="NpcAkiishz.cs" />
+    <Compile Include="NpcAlec.cs" />
+    <Compile Include="NpcBaradon.cs" />
+    <Compile Include="NpcBella.cs" />
+    <Compile Include="NpcBlair.cs" />
+    <Compile Include="NpcBlasus.cs" />
+    <Compile Include="NpcBlazar.cs" />
+    <Compile Include="NpcBruce.cs" />
+    <Compile Include="NpcChoice.cs" />
+    <Compile Include="NpcChuck.cs" />
+    <Compile Include="NpcDatabaseModule.cs" />
+    <Compile Include="NpcDefaultBlacksmith.cs" />
+    <Compile Include="NpcDefaultEquipment.cs" />
+    <Compile Include="NpcDefaultFood.cs" />
+    <Compile Include="NpcDefaultWarehouse.cs" />
+    <Compile Include="NpcDerek.cs" />
+    <Compile Include="NpcDialog.cs" />
+    <Compile Include="NpcDoguineo.cs" />
+    <Compile Include="NpcDropine.cs" />
+    <Compile Include="NpcEbuinSentinel.cs" />
+    <Compile Include="NpcFernis.cs" />
+    <Compile Include="NpcFraanshz.cs" />
+    <Compile Include="NpcGarbac.cs" />
+    <Compile Include="NpcGemini.cs" />
+    <Compile Include="NpcGlan.cs" />
+    <Compile Include="NpcGroks.cs" />
+    <Compile Include="NpcHaldine.cs" />
+    <Compile Include="NpcHendrick.cs" />
+    <Compile Include="NpcHeroldIronhead.cs" />
+    <Compile Include="NpcIzilda.cs" />
+    <Compile Include="NpcIzzy.cs" />
+    <Compile Include="NpcJack.cs" />
+    <Compile Include="NpcKrooshz.cs" />
+    <Compile Include="NpcLaila.cs" />
+    <Compile Include="NpcMiranda.cs" />
+    <Compile Include="NpcModule.cs" />
+    <Compile Include="NpcMuum.cs" />
+    <Compile Include="NpcNorumbria.cs" />
+    <Compile Include="NpcOneal.cs" />
+    <Compile Include="NpcOutlawMercenary.cs" />
+    <Compile Include="NpcRagnar.cs" />
+    <Compile Include="NpcReptiliaGuardCaptain.cs" />
+    <Compile Include="NpcReptiliaMercenary.cs" />
+    <Compile Include="NpcRigaashz.cs" />
+    <Compile Include="NpcRollo.cs" />
+    <Compile Include="NpcSawana.cs" />
+    <Compile Include="NpcSecretGardenGemini.cs" />
+    <Compile Include="NpcSeraphiel.cs" />
+    <Compile Include="NpcSlurg.cs" />
+    <Compile Include="NpcSpawnBrushManager.cs" />
+    <Compile Include="NpcSpawnPoint.cs" />
+    <Compile Include="NpcSuperSeraphiel.cs" />
+    <Compile Include="NpcThognor.cs" />
+    <Compile Include="NpcVikingGuard.cs" />
+    <Compile Include="NpcVikingMerchant.cs" />
+    <Compile Include="NpcWeiishz.cs" />
+    <Compile Include="NpcYalerik.cs" />
+    <Compile Include="ObjectiveType.cs" />
+    <Compile Include="ObjectPoolModule.cs" />
+    <Compile Include="OptionsWindowManager.cs" />
+    <Compile Include="PackageType.cs" />
+    <Compile Include="ParalyzingStingNonPlayerSkill.cs" />
+    <Compile Include="PartyInvitationWindowManager.cs" />
+    <Compile Include="PartyMember.cs" />
+    <Compile Include="PartyMemberManager.cs" />
+    <Compile Include="PartyModule.cs" />
+    <Compile Include="PathNode.cs" />
+    <Compile Include="PauseIfPink.cs" />
+    <Compile Include="PerfectShotSkill.cs" />
+    <Compile Include="PetModule.cs" />
+    <Compile Include="PieElixirItem.cs" />
+    <Compile Include="PieItem.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="PlayerBlueprint.cs" />
+    <Compile Include="PlayerDatabaseModule.cs" />
+    <Compile Include="PlayerModule.cs" />
+    <Compile Include="PlayerOrderManager.cs" />
+    <Compile Include="PlayerProfession.cs" />
+    <Compile Include="PlayerQuest.cs" />
+    <Compile Include="PlayerQuestObjective.cs" />
+    <Compile Include="PlayerQuestReward.cs" />
+    <Compile Include="PlayerReward.cs" />
+    <Compile Include="PlayerSpawnNetworkMessage.cs" />
+    <Compile Include="PlayerTitleSlotManager.cs" />
+    <Compile Include="PlayerWindowManager.cs" />
+    <Compile Include="PoisonousStingNonPlayerSkill.cs" />
+    <Compile Include="PoisonStormNonPlayerSkill.cs" />
+    <Compile Include="PoolObject.cs" />
+    <Compile Include="PossibleLoot.cs" />
+    <Compile Include="PremiumAscendedItem.cs" />
+    <Compile Include="PremiumBasicItem.cs" />
+    <Compile Include="PremiumEpicItem.cs" />
+    <Compile Include="PremiumMasterworkItem.cs" />
+    <Compile Include="Projectile.cs" />
+    <Compile Include="ProjectileBase.cs" />
+    <Compile Include="ProjectileBaseConfig.cs" />
+    <Compile Include="ProjectileConfig.cs" />
+    <Compile Include="ProjectileModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtectionSkill.cs" />
+    <Compile Include="ProximityPointModule.cs" />
+    <Compile Include="PunishmentSkill.cs" />
+    <Compile Include="PurifySkill.cs" />
+    <Compile Include="PvpModule.cs" />
+    <Compile Include="PvpStatus.cs" />
+    <Compile Include="Quest.cs" />
+    <Compile Include="QuestButtonManager.cs" />
+    <Compile Include="QuestDatabaseModule.cs" />
+    <Compile Include="QuestIconManager.cs" />
+    <Compile Include="QuestManager.cs" />
+    <Compile Include="QuestModule.cs" />
+    <Compile Include="QuestObjective.cs" />
+    <Compile Include="QuestObjectiveResource.cs" />
+    <Compile Include="QuestOverlaySlotManager.cs" />
+    <Compile Include="QuestOverlayWindowManager.cs" />
+    <Compile Include="QuestResource.cs" />
+    <Compile Include="QuestReward.cs" />
+    <Compile Include="QuestRewardResource.cs" />
+    <Compile Include="QuestSlotManager.cs" />
+    <Compile Include="QuestTrackerManager.cs" />
+    <Compile Include="QuestTrackerObjectiveManager.cs" />
+    <Compile Include="QuestWindowManager.cs" />
+    <Compile Include="RageNonPlayerSkill.cs" />
+    <Compile Include="RageSkill.cs" />
+    <Compile Include="Rank.cs" />
+    <Compile Include="Rarity.cs" />
+    <Compile Include="RateGameWindowManager.cs" />
+    <Compile Include="RedFireProjectile.cs" />
+    <Compile Include="RefinedHealthPotionItem.cs" />
+    <Compile Include="RefinedHealthSerumItem.cs" />
+    <Compile Include="RefugeSkill.cs" />
+    <Compile Include="RegenNonPlayerSkill.cs" />
+    <Compile Include="RemedyItem.cs" />
+    <Compile Include="ReplicationTile.cs" />
+    <Compile Include="ReplicatonConfig.cs" />
+    <Compile Include="RequiemSkill.cs" />
+    <Compile Include="ResourcePathAttribute.cs" />
+    <Compile Include="ResourcesManager.cs" />
+    <Compile Include="RespawnWindowManager.cs" />
+    <Compile Include="ResponseError.cs" />
+    <Compile Include="RestrictionSkill.cs" />
+    <Compile Include="RewardType.cs" />
+    <Compile Include="Rotate.cs" />
+    <Compile Include="RoyalArrowProjectile.cs" />
+    <Compile Include="RushNonPlayerSkill.cs" />
+    <Compile Include="RushSkill.cs" />
+    <Compile Include="SacredGuardianAngelItem.cs" />
+    <Compile Include="SafeAreaManager.cs" />
+    <Compile Include="ScratchNonPlayerSkill.cs" />
+    <Compile Include="ScriptableDatabaseModule.cs" />
+    <Compile Include="ScrollOfReturnItem.cs" />
+    <Compile Include="SellMarketManager.cs" />
+    <Compile Include="SellOrderManager.cs" />
+    <Compile Include="SeraphArrowProjectile.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="ServerSaveModule.cs" />
+    <Compile Include="ServerSettings.cs" />
+    <Compile Include="ServerSettingsManager.cs" />
+    <Compile Include="ServerSlotManager.cs" />
+    <Compile Include="ServerType.cs" />
+    <Compile Include="SettingsManager.cs" />
+    <Compile Include="ShootArrowNonPlayerSkill.cs" />
+    <Compile Include="ShootArrowSkill.cs" />
+    <Compile Include="ShootConfig.cs" />
+    <Compile Include="SiphonNonPlayerSkill.cs" />
+    <Compile Include="Skill.cs" />
+    <Compile Include="SkillBarSlotModule.cs" />
+    <Compile Include="SkillBase.cs" />
+    <Compile Include="SkillBaseConfig.cs" />
+    <Compile Include="SkillBookSlotModule.cs" />
+    <Compile Include="SkillCategory.cs" />
+    <Compile Include="SkillConfig.cs" />
+    <Compile Include="SkillDatabaseModule.cs" />
+    <Compile Include="SkillEnchantWindowManager.cs" />
+    <Compile Include="SkillModule.cs" />
+    <Compile Include="SkillTooltipManager.cs" />
+    <Compile Include="SkillType.cs" />
+    <Compile Include="SlashNonPlayerSkill.cs" />
+    <Compile Include="SlotType.cs" />
+    <Compile Include="SlurgMagicCoreItem.cs" />
+    <Compile Include="SmallGuardianAngelItem.cs" />
+    <Compile Include="SmashNonPlayerSkill.cs" />
+    <Compile Include="SmokeFuryProjectile.cs" />
+    <Compile Include="SnowStormNonPlayerSkill.cs" />
+    <Compile Include="SnowWallNonPlayerSkill.cs" />
+    <Compile Include="SonicForceProjectile.cs" />
+    <Compile Include="SortingGroupModule.cs" />
+    <Compile Include="SortingLayerModule.cs" />
+    <Compile Include="SoundEffectPlayer.cs" />
+    <Compile Include="SpawnLootConfig.cs" />
+    <Compile Include="SpearProjectile.cs" />
+    <Compile Include="SpellbookItem.cs" />
+    <Compile Include="StartSteamTransactionResource.cs" />
+    <Compile Include="StartupManager.cs" />
+    <Compile Include="StealthSkill.cs" />
+    <Compile Include="SteamIAPManager.cs" />
+    <Compile Include="SteamManager.cs" />
+    <Compile Include="StingProjectile.cs" />
+    <Compile Include="StompSkill.cs" />
+    <Compile Include="StoneShieldSkill.cs" />
+    <Compile Include="StorageButtonManager.cs" />
+    <Compile Include="StorageItemManager.cs" />
+    <Compile Include="StorageManager.cs" />
+    <Compile Include="StoreAction.cs" />
+    <Compile Include="StoreItemConfig.cs" />
+    <Compile Include="StoreItemSlotManager.cs" />
+    <Compile Include="StoreModule.cs" />
+    <Compile Include="StorylineWindowManager.cs" />
+    <Compile Include="StrikeSkill.cs" />
+    <Compile Include="StunShotSkill.cs" />
+    <Compile Include="SummonNonPlayerSkill.cs" />
+    <Compile Include="SyncListAccountFriend.cs" />
+    <Compile Include="SyncListAttribute.cs" />
+    <Compile Include="SyncListCondition.cs" />
+    <Compile Include="SyncListDailyReward.cs" />
+    <Compile Include="SyncListItem.cs" />
+    <Compile Include="SyncListPartyMember.cs" />
+    <Compile Include="SyncListPlayerBlueprint.cs" />
+    <Compile Include="SyncListPlayerQuest.cs" />
+    <Compile Include="SyncListQuest.cs" />
+    <Compile Include="SyncListSkill.cs" />
+    <Compile Include="SyncListTitle.cs" />
+    <Compile Include="Talent.cs" />
+    <Compile Include="TalentButtonManager.cs" />
+    <Compile Include="TalentDatabase.cs" />
+    <Compile Include="TalentIdentifier.cs" />
+    <Compile Include="TalentModule.cs" />
+    <Compile Include="TalentSlotManager.cs" />
+    <Compile Include="TalentWindowManager.cs" />
+    <Compile Include="TargetFinder.cs" />
+    <Compile Include="TargetHudModule.cs" />
+    <Compile Include="TargetTrackerManager.cs" />
+    <Compile Include="TelegramApiManager.cs" />
+    <Compile Include="TelegramPayload.cs" />
+    <Compile Include="TeleportBrushManager.cs" />
+    <Compile Include="TextManager.cs" />
+    <Compile Include="TextMeshFPS.cs" />
+    <Compile Include="TheTeenBaanProjectile.cs" />
+    <Compile Include="ThrustNonPlayerSkill.cs" />
+    <Compile Include="ThrustSkill.cs" />
+    <Compile Include="ThunderStormNonPlayerSkill.cs" />
+    <Compile Include="ThunderstormSkill.cs" />
+    <Compile Include="TileMapCompressor.cs" />
+    <Compile Include="TintTextureGenerator.cs" />
+    <Compile Include="Title.cs" />
+    <Compile Include="TitleDatabaseModule.cs" />
+    <Compile Include="TitleModule.cs" />
+    <Compile Include="ToolkitItem.cs" />
+    <Compile Include="TornadoNonPlayerSkill.cs" />
+    <Compile Include="TornadoSkill.cs" />
+    <Compile Include="TouchOfNatureSkill.cs" />
+    <Compile Include="TradeHandshakeWindowManager.cs" />
+    <Compile Include="TradeItemSlotManager.cs" />
+    <Compile Include="TradeModule.cs" />
+    <Compile Include="TradeWindowManager.cs" />
+    <Compile Include="TradingPostManager.cs" />
+    <Compile Include="TrainingArrowProjectile.cs" />
+    <Compile Include="TrainingMode.cs" />
+    <Compile Include="TripleShotSkill.cs" />
+    <Compile Include="TripleThrustNonPlayerSkill.cs" />
+    <Compile Include="TripleThrustSkill.cs" />
+    <Compile Include="TvtEventMessage.cs" />
+    <Compile Include="TvtEventWindowManager.cs" />
+    <Compile Include="TvtItemBase.cs" />
+    <Compile Include="TvtTeam.cs" />
+    <Compile Include="UiSize.cs" />
+    <Compile Include="UISystemModule.cs" />
+    <Compile Include="UnityEngine\HexagonalRuleTile.2.cs" />
+    <Compile Include="UnityEngine\HexagonalRuleTile.cs" />
+    <Compile Include="UnityEngine\IsometricRuleTile.2.cs" />
+    <Compile Include="UnityEngine\IsometricRuleTile.cs" />
+    <Compile Include="UnityEngine\Purchasing\Security\AppleTangle.cs" />
+    <Compile Include="UnityEngine\Purchasing\Security\GooglePlayTangle.cs" />
+    <Compile Include="UnityEngine\RuleOverrideTile.cs" />
+    <Compile Include="UnityEngine\RuleTile.2.cs" />
+    <Compile Include="UnityEngine\RuleTile.cs" />
+    <Compile Include="UnityEngine\Tilemaps\AnimatedTile.cs" />
+    <Compile Include="UnityEngine\Tilemaps\GridInformation.cs" />
+    <Compile Include="UnityEngine\Tilemaps\GridInformationType.cs" />
+    <Compile Include="UnityEngine\Tilemaps\PipelineTile.cs" />
+    <Compile Include="UnityEngine\Tilemaps\RandomTile.cs" />
+    <Compile Include="UnityEngine\Tilemaps\TerrainTile.cs" />
+    <Compile Include="UnityEngine\Tilemaps\WeightedRandomTile.cs" />
+    <Compile Include="UnityEngine\Tilemaps\WeightedSprite.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="UnloadSkill.cs" />
+    <Compile Include="UnluckSoftware\SortingLayerAttribute.cs" />
+    <Compile Include="UpgradeScrollItem.cs" />
+    <Compile Include="ValkyrieWhipNonPlayerSkill.cs" />
+    <Compile Include="VanishNonPlayerSkill.cs" />
+    <Compile Include="VariableJoystick.cs" />
+    <Compile Include="VengeanceSkill.cs" />
+    <Compile Include="VenomArrowProjectile.cs" />
+    <Compile Include="VenomScratchNonPlayerSkill.cs" />
+    <Compile Include="VeteranPackageUpgradeItem.cs" />
+    <Compile Include="VikingChestItem.cs" />
+    <Compile Include="VitaliSkill.cs" />
+    <Compile Include="Vocation.cs" />
+    <Compile Include="VocationModule.cs" />
+    <Compile Include="VocationToggleManager.cs" />
+    <Compile Include="VolcanoNonPlayerSkill.cs" />
+    <Compile Include="WalletModule.cs" />
+    <Compile Include="WarehouseBoosterItem.cs" />
+    <Compile Include="WarehouseBoosterWindowManager.cs" />
+    <Compile Include="WarehouseModule.cs" />
+    <Compile Include="WarehouseSlotManager.cs" />
+    <Compile Include="WarehouseWindowManager.cs" />
+    <Compile Include="WindballProjectile.cs" />
+    <Compile Include="WindFuryNonPlayerSkill.cs" />
+    <Compile Include="WindFuryProjectile.cs" />
+    <Compile Include="WindShotNonPlayerSkill.cs" />
+    <Compile Include="WoodenArrowProjectile.cs" />
+    <Compile Include="WorldAreaModule.cs" />
+    <Compile Include="WorldCreatorModule.cs" />
+    <Compile Include="WrathSkill.cs" />
+    <Compile Include="ZippyLights2D.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

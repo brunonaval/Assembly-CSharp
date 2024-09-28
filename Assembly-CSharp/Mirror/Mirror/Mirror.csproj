@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E69EFD1-EB9C-417B-95AC-067F2C4D4B21}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mirror</RootNamespace>
+    <AssemblyName>Mirror</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccurateInterval.cs" />
+    <Compile Include="AddPlayerMessage.cs" />
+    <Compile Include="Batcher.cs" />
+    <Compile Include="Capture.cs" />
+    <Compile Include="ChangeOwnerMessage.cs" />
+    <Compile Include="Channels.cs" />
+    <Compile Include="ClientAttribute.cs" />
+    <Compile Include="ClientCallbackAttribute.cs" />
+    <Compile Include="ClientRpcAttribute.cs" />
+    <Compile Include="CommandAttribute.cs" />
+    <Compile Include="CommandMessage.cs" />
+    <Compile Include="Compression.cs" />
+    <Compile Include="ConnectionQuality.cs" />
+    <Compile Include="ConnectionQualityHeuristics.cs" />
+    <Compile Include="ConnectState.cs" />
+    <Compile Include="DeltaCompression.cs" />
+    <Compile Include="EntityStateMessage.cs" />
+    <Compile Include="ExponentialMovingAverage.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="GeneratedNetworkCode.cs" />
+    <Compile Include="HistoryBounds.cs" />
+    <Compile Include="HostMode.cs" />
+    <Compile Include="InterestManagement.cs" />
+    <Compile Include="InterestManagementBase.cs" />
+    <Compile Include="LagCompensation.cs" />
+    <Compile Include="LagCompensationSettings.cs" />
+    <Compile Include="LocalConnectionToClient.cs" />
+    <Compile Include="LocalConnectionToServer.cs" />
+    <Compile Include="Mathd.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="MinMaxBounds.cs" />
+    <Compile Include="NetworkAuthenticator.cs" />
+    <Compile Include="NetworkBehaviour.cs" />
+    <Compile Include="NetworkBehaviourSyncVar.cs" />
+    <Compile Include="NetworkClient.cs" />
+    <Compile Include="NetworkConnection.cs" />
+    <Compile Include="NetworkConnectionToClient.cs" />
+    <Compile Include="NetworkConnectionToServer.cs" />
+    <Compile Include="NetworkDiagnostics.cs" />
+    <Compile Include="NetworkIdentity.cs" />
+    <Compile Include="NetworkIdentitySerialization.cs" />
+    <Compile Include="NetworkLoop.cs" />
+    <Compile Include="NetworkManager.cs" />
+    <Compile Include="NetworkManagerHUD.cs" />
+    <Compile Include="NetworkManagerMode.cs" />
+    <Compile Include="NetworkMessage.cs" />
+    <Compile Include="NetworkMessageDelegate.cs" />
+    <Compile Include="NetworkMessageId.cs" />
+    <Compile Include="NetworkMessages.cs" />
+    <Compile Include="NetworkPingMessage.cs" />
+    <Compile Include="NetworkPongMessage.cs" />
+    <Compile Include="NetworkReader.cs" />
+    <Compile Include="NetworkReaderExtensions.cs" />
+    <Compile Include="NetworkReaderPool.cs" />
+    <Compile Include="NetworkReaderPooled.cs" />
+    <Compile Include="NetworkServer.cs" />
+    <Compile Include="NetworkStartPosition.cs" />
+    <Compile Include="NetworkTime.cs" />
+    <Compile Include="NetworkWriter.cs" />
+    <Compile Include="NetworkWriterExtensions.cs" />
+    <Compile Include="NetworkWriterPool.cs" />
+    <Compile Include="NetworkWriterPooled.cs" />
+    <Compile Include="NotReadyMessage.cs" />
+    <Compile Include="ObjectDestroyMessage.cs" />
+    <Compile Include="ObjectHideMessage.cs" />
+    <Compile Include="ObjectSpawnFinishedMessage.cs" />
+    <Compile Include="ObjectSpawnStartedMessage.cs" />
+    <Compile Include="PlayerSpawnMethod.cs" />
+    <Compile Include="Pool.cs" />
+    <Compile Include="PortTransport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reader.cs" />
+    <Compile Include="ReadyMessage.cs" />
+    <Compile Include="RemoteCalls\Invoker.cs" />
+    <Compile Include="RemoteCalls\RemoteCallDelegate.cs" />
+    <Compile Include="RemoteCalls\RemoteCallType.cs" />
+    <Compile Include="RemoteCalls\RemoteProcedureCalls.cs" />
+    <Compile Include="RpcMessage.cs" />
+    <Compile Include="SceneAttribute.cs" />
+    <Compile Include="SceneMessage.cs" />
+    <Compile Include="SceneOperation.cs" />
+    <Compile Include="ServerAttribute.cs" />
+    <Compile Include="ServerCallbackAttribute.cs" />
+    <Compile Include="ShowInInspectorAttribute.cs" />
+    <Compile Include="Snapshot.cs" />
+    <Compile Include="SnapshotInterpolation.cs" />
+    <Compile Include="SnapshotInterpolationSettings.cs" />
+    <Compile Include="SortedListExtensions.cs" />
+    <Compile Include="SpawnDelegate.cs" />
+    <Compile Include="SpawnHandlerDelegate.cs" />
+    <Compile Include="SpawnMessage.cs" />
+    <Compile Include="SyncDictionary.cs" />
+    <Compile Include="SyncDirection.cs" />
+    <Compile Include="SyncHashSet.cs" />
+    <Compile Include="SyncIDictionary.cs" />
+    <Compile Include="SyncList.cs" />
+    <Compile Include="SyncMode.cs" />
+    <Compile Include="SyncObject.cs" />
+    <Compile Include="SyncSet.cs" />
+    <Compile Include="SyncSortedSet.cs" />
+    <Compile Include="SyncVarAttribute.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsUnmanagedAttribute.cs" />
+    <Compile Include="TargetRpcAttribute.cs" />
+    <Compile Include="TimeSample.cs" />
+    <Compile Include="TimeSnapshot.cs" />
+    <Compile Include="TimeSnapshotMessage.cs" />
+    <Compile Include="Transport.cs" />
+    <Compile Include="TransportError.cs" />
+    <Compile Include="Unbatcher.cs" />
+    <Compile Include="UnityEventNetworkConnection.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="UnSpawnDelegate.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Vector3Long.cs" />
+    <Compile Include="Visibility.cs" />
+    <Compile Include="WeaverFuse.cs" />
+    <Compile Include="Writer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
